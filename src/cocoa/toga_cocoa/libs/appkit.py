@@ -564,6 +564,9 @@ def NSTextAlignment(alignment):
 NSTextField = ObjCClass('NSTextField')
 NSTextFieldCell = ObjCClass('NSTextFieldCell')
 
+NSTextField.declare_property('editable')
+NSTextField.declare_property('bezeled')
+
 ######################################################################
 # NSTextFieldCell.h
 
@@ -583,6 +586,7 @@ NSTimer = ObjCClass('NSTimer')
 NSToolbar = ObjCClass('NSToolbar')
 NSToolbarItem = ObjCClass('NSToolbarItem')
 
+NSToolbarItem.declare_property('itemIdentifier')
 ######################################################################
 # NSTrackingArea.h
 NSTrackingMouseEnteredAndExited = 0x01
